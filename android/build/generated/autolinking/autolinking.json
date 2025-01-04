@@ -1,20 +1,20 @@
 {
-  "root": "C:\\Ramesh\\ReactNative\\TerraLogic",
-  "reactNativePath": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native",
+  "root": "C:\\Ramesh\\terralogic",
+  "reactNativePath": "C:\\Ramesh\\terralogic\\node_modules\\react-native",
   "reactNativeVersion": "0.76",
   "dependencies": {
     "react-native-safe-area-context": {
-      "root": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-safe-area-context",
+      "root": "C:\\Ramesh\\terralogic\\node_modules\\react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
+          "podspecPath": "C:\\Ramesh\\terralogic\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
           "version": "5.0.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-safe-area-context\\android",
+          "sourceDir": "C:\\Ramesh\\terralogic\\node_modules\\react-native-safe-area-context\\android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -23,7 +23,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "C:/Ramesh/ReactNative/TerraLogic/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "C:/Ramesh/terralogic/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -32,23 +32,23 @@
       }
     },
     "react-native-vector-icons": {
-      "root": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-vector-icons",
+      "root": "C:\\Ramesh\\terralogic\\node_modules\\react-native-vector-icons",
       "name": "react-native-vector-icons",
       "platforms": {
         "ios": {
-          "podspecPath": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-vector-icons\\RNVectorIcons.podspec",
+          "podspecPath": "C:\\Ramesh\\terralogic\\node_modules\\react-native-vector-icons\\RNVectorIcons.podspec",
           "version": "10.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "C:\\Ramesh\\ReactNative\\TerraLogic\\node_modules\\react-native-vector-icons\\android",
+          "sourceDir": "C:\\Ramesh\\terralogic\\node_modules\\react-native-vector-icons\\android",
           "packageImportPath": "import com.oblador.vectoricons.VectorIconsPackage;",
           "packageInstance": "new VectorIconsPackage()",
           "buildTypes": [],
           "libraryName": "RNVectorIconsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "C:/Ramesh/ReactNative/TerraLogic/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "C:/Ramesh/terralogic/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -214,7 +214,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "C:\\Ramesh\\ReactNative\\TerraLogic"
+          "default": "C:\\Ramesh\\terralogic"
         },
         {
           "name": "--platform <string>",
@@ -501,7 +501,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "C:\\Ramesh\\ReactNative\\TerraLogic\\ios",
+      "sourceDir": "C:\\Ramesh\\terralogic\\ios",
       "xcodeProject": {
         "name": "TerraLogic.xcodeproj",
         "path": ".",
@@ -510,7 +510,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "C:\\Ramesh\\ReactNative\\TerraLogic\\android",
+      "sourceDir": "C:\\Ramesh\\terralogic\\android",
       "appName": "app",
       "packageName": "com.terralogic",
       "applicationId": "com.terralogic",

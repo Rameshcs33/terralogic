@@ -1,0 +1,4 @@
+#Sat Jan 04 15:43:24 IST 2025
+base.0=C\:\\Ramesh\\terralogic\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

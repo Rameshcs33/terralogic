@@ -14,6 +14,7 @@ import {Avatar, Searchbar} from 'react-native-paper';
 import {moderateScale} from '../common/scale';
 
 let {width} = Dimensions.get('window');
+const isTablet = width >= 600;
 
 const Login = () => {
   const [Search, setSearch] = useState<string>('');
@@ -45,6 +46,7 @@ const Login = () => {
             setHasMore(true);
             setPage(1);
             setTempList(response.items);
+            setSearchList([]);
           } else {
             Alert.alert('No data found !');
             setTempList([]);
@@ -135,17 +137,20 @@ const Login = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <Pressable style={styles.container} onPress={() => Keyboard.dismiss()}>
       <View
         testID="searchRow"
         style={{
-          width: moderateScale(width - 220),
+          width: moderateScale(isTablet ? width - 220 : 340),
           alignItems: 'center',
           justifyContent: 'space-between',
           flexDirection: 'row',
         }}>
         <Searchbar
-          style={{width: moderateScale(width - 340), height: moderateScale(42)}}
+          style={{
+            width: moderateScale(isTablet ? width - 340 : 230),
+            height: moderateScale(42),
+          }}
           inputStyle={{color: 'black', fontSize: moderateScale(12)}}
           placeholderTextColor={'gray'}
           testID="search"
@@ -158,7 +163,7 @@ const Login = () => {
           testID="searchBtn"
           onPress={onSearch}
           style={{
-            paddingHorizontal: moderateScale(32),
+            paddingHorizontal: moderateScale(isTablet ? 32 : 20),
             paddingVertical: moderateScale(10),
             borderRadius: moderateScale(8),
             backgroundColor: 'blue',
@@ -196,12 +201,11 @@ const Login = () => {
           <ActivityIndicator size={'large'} color={'blue'} />
         </View>
       )}
-    </View>
+    </Pressable>
   );
 };
 
 export default Login;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -211,7 +215,7 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: 'white',
-    width: moderateScale(width - 220),
+    width: moderateScale(isTablet ? width - 220 : 340),
     paddingHorizontal: moderateScale(12),
     paddingVertical: moderateScale(10),
     borderRadius: moderateScale(10),
