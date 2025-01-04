@@ -14,7 +14,6 @@ import {Avatar, Searchbar} from 'react-native-paper';
 import {moderateScale} from '../common/scale';
 
 let {width} = Dimensions.get('window');
-const isTablet = width >= 600;
 
 const Login = () => {
   const [Search, setSearch] = useState<string>('');
@@ -106,7 +105,7 @@ const Login = () => {
           />
         </View>
 
-        <View style={{width: '70%', paddingHorizontal: moderateScale(12)}}>
+        <View style={{width: '75%', paddingHorizontal: moderateScale(12)}}>
           <Text style={{fontSize: moderateScale(13), color: 'black'}}>
             {item.login}
           </Text>
@@ -141,14 +140,14 @@ const Login = () => {
       <View
         testID="searchRow"
         style={{
-          width: moderateScale(isTablet ? width - 220 : 340),
+          width: moderateScale(340),
           alignItems: 'center',
           justifyContent: 'space-between',
           flexDirection: 'row',
         }}>
         <Searchbar
           style={{
-            width: moderateScale(isTablet ? width - 340 : 230),
+            width: moderateScale(230),
             height: moderateScale(42),
           }}
           inputStyle={{color: 'black', fontSize: moderateScale(12)}}
@@ -163,7 +162,7 @@ const Login = () => {
           testID="searchBtn"
           onPress={onSearch}
           style={{
-            paddingHorizontal: moderateScale(isTablet ? 32 : 20),
+            paddingHorizontal: moderateScale(30),
             paddingVertical: moderateScale(10),
             borderRadius: moderateScale(8),
             backgroundColor: 'blue',
@@ -215,7 +214,7 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: 'white',
-    width: moderateScale(isTablet ? width - 220 : 340),
+    width: moderateScale(340),
     paddingHorizontal: moderateScale(12),
     paddingVertical: moderateScale(10),
     borderRadius: moderateScale(10),
