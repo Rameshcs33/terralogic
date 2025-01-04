@@ -1,1 +1,0 @@
-C:\Ramesh\terralogic\android\app\build\intermediates\cxx\RelWithDebInfo\51ds6134\obj\armeabi-v7a
